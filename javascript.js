@@ -4,30 +4,32 @@ var startButton = document.getElementById("start-button");
 var highScoreLink = document.getElementById("highscore-link");
 var timer = document.getElementById("timer");
 var pokemonImg = document.getElementById("pokemon-image");
-var options = document.getElementById("options-container");
-var option1 = document.getElementById("option1");
-var option2 = document.getElementById("option2");
-var option3 = document.getElementById("option3");
-var option4 = document.getElementById("option4");
+var questionContainer = document.getElementById("question-container");
+var homePage = document.getElementById("homepage");
+
+var questions = [ {
+    pokemonImgQuestion: pokemonImg.src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/143.png", 
+    options: [
+        {content: "snorlax", correct: true},
+        {content: "suresnacks", correct: false}
+    ]
+}
+]
+ function nextPage (
+     
+ )
 
 function game() {
-    pokemonImg.src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/143.png" ;
-    options.style.display = "block";
-    option1.innerText = "1.Snorlax";
-    option2.innerText = "2.Smorecrax";
-    option3.innerText = "3.Slarsmacks";
-    option4.innerText = "4.Suresnacks";
     
-
     
 }
 
 
 startButton.addEventListener("click",function(){
     // start button must replace pageTitle with image of pokemon
-    pageTitle.style.display = "none";
-    descriptionHome.style.display = "none";
-    startButton.style.display = "none";
+    homePage.classList.add("hide");
+    questionContainer.classList.remove("hide");
+    
    
     game();
 })
