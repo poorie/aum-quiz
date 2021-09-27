@@ -12,7 +12,7 @@
 <body>
     <header>
         <span id="highscore-link">View Highscores</span>
-        <span>Time:<span id="timer"></span></span>
+        <span id="timer-container">Time:<progress value="0" max="60" id="progressBar"></progress></span>
     </header>
     <main>
         <div id="homepage">
@@ -23,11 +23,15 @@
         <div id="question-container" class="hide">
             <div><img src="" id="pokemon-image" alt="pokemon image">Pokemon image</div>
             <div id="options-container">
-                <button class="btn">Option1</button>
-                <button class="btn">Option2</button>
-                <button class="btn">Option3</button>
-                <button class="btn">Option4</button>
+                <button class="option-btn" id="option1" onclick="optionsBtnPressed(0)">Option1</button>
+                <button class="option-btn" id="option2" onclick="optionsBtnPressed(1)">Option2</button>
+                <button class="option-btn" id="option3" onclick="optionsBtnPressed(2)">Option3</button>
+                <button class="option-btn" id="option4" onclick="optionsBtnPressed(3)">Option4</button>
             </div>
+        </div>
+        <div id="scorepage" class="hide">
+            <h1>Congrats! Your Score is: <span id = "playerscore" onload="displayScore()"></span></h1>
+    <script src="javascript.js"></script>
         </div>
     </main>
     <script src="javascript.js"></script>
