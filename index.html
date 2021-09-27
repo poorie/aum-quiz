@@ -21,7 +21,7 @@
             <button class="btn" id="start-button">Start Game</button>
         </div>
         <div id="question-container" class="hide">
-            <div><img src="" id="pokemon-image" alt="pokemon image">Pokemon image</div>
+            <div><img src="" id="pokemon-image" alt="pokemon image"></div>
             <div id="options-container">
                 <button class="option-btn" id="option1" onclick="optionsBtnPressed(0)">Option1</button>
                 <button class="option-btn" id="option2" onclick="optionsBtnPressed(1)">Option2</button>
@@ -30,8 +30,20 @@
             </div>
         </div>
         <div id="scorepage" class="hide">
-            <h1>Congrats! Your Score is: <span id = "playerscore" onload="displayScore()"></span></h1>
-    <script src="javascript.js"></script>
+            <h1>Congrats! Your Score is: <span id = "playerscore" ></span></h1>
+            <form id="playerNameForm">
+                <label for="playerName">Enter Initials:</label>
+                <input type="text" id="playerName" name="playerName">
+                <input type="submit" id="submitNameBtn">
+            </form>
+        </div>
+        <div id=highscorepage class="hide">
+            <h1>Highscores</h1>
+            <ol id="highscore-list">
+
+            </ol>
+            <button id = "playAgainButton" class="btn"> Play Again! </button>
+            <button class="btn">Clear Highscores</button>
         </div>
     </main>
     <script src="javascript.js"></script>

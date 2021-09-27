@@ -17,6 +17,11 @@ var optionButton4 = document.getElementById("option4");
 var timeLeft = 60;
 var playerScore = 0;
 var scorePage = document.getElementById("scorepage");
+var submitNamebtn = document.getElementById("submitNameBtn");
+var highScorePage = document.getElementById("highscorepage");
+var playerName = document.getElementById("playerName");
+var newPlayerName = playerName.value;
+var playAgainBtn = document.getElementById("playAgainButton");
 
 function showStartPage() {
 homePage.classList.remove("hide");
@@ -40,10 +45,11 @@ function displayScore(){
 
 
 function endGame(){
-    setScore();
     timeContainer.classList.add("hide");
-    showScorePage();
+    setScore();
     displayScore();
+    showScorePage();
+   
 }
 
 function optionsBtnPressed(newIndex){
@@ -112,15 +118,12 @@ function setupGameRound() {
 
 function updateTimer() {
     if(timeLeft <= 0){
-        clearInterval(timeLeft);
-        endGame();
-        return;
-        
-    }
+        endGame(); 
+    }else{
     document.getElementById("progressBar").value = 60 - timeLeft;
     timeLeft--;
-
-      
+    clearInterval(timeLeft);
+    }
 }
 
 
@@ -129,9 +132,28 @@ startButton.addEventListener("click",function(){
     // start button must replace pageTitle with image of pokemon
     homePage.classList.add("hide");
     showGamePage();
-    timer = setInterval(updateTimer, 1000);
     setupGameRound();
+    timer = setInterval(updateTimer, 1000);
+    
       
+})
+ function addNewHighscore(){
+    var ol = document.getElementById("highscore-list");
+    var li = document.createElement("li");
+    li.appendChild(document.createTextNode(playerName.value + " - " + playerScore));
+    ol.appendChild(li);
+ }
+
+submitNamebtn.addEventListener("click",function(event) {
+    event.preventDefault();
+    addNewHighscore();
+    highScorePage.classList.remove("hide");
+    scorePage.classList.add("hide");
+})
+
+playAgainBtn.addEventListener("click", function(){
+    location.reload();
+    return false;
 })
 
 // start button must also replace start button with a list of buttons that are the options
