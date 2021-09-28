@@ -10,23 +10,24 @@
 </head>
 
 <body>
-    <header>
+    <header><div>
         <span id="highscore-link">View Highscores</span>
         <span id="timer-container">Time:<progress value="0" max="60" id="progressBar"></progress></span>
+            </div>
     </header>
     <main>
         <div id="homepage">
-            <h1 id="page-title">Guess the Pokemon name challenge!</h1>
-            <p id="description-home">An image of a Pokemon will apear try to guess which name is the correct name!</p>
+            <h1 id="page-title">Guess the Pok&eacute;mon name challenge!</h1>
+            <p id="description-home">An image of a Pok&eacute;mon will apear try to guess which name is the correct name! <br>The faster you guess correctly the more points you will score!<br> Good Luck!</p>
             <button class="btn" id="start-button">Start Game</button>
         </div>
         <div id="question-container" class="hide">
             <div><img src="" id="pokemon-image" alt="pokemon image"></div>
             <div id="options-container">
-                <button class="option-btn" id="option1" onclick="optionsBtnPressed(0)">Option1</button>
-                <button class="option-btn" id="option2" onclick="optionsBtnPressed(1)">Option2</button>
-                <button class="option-btn" id="option3" onclick="optionsBtnPressed(2)">Option3</button>
-                <button class="option-btn" id="option4" onclick="optionsBtnPressed(3)">Option4</button>
+                <button  class="option-btn" id="option1" onclick="optionsBtnPressed(0)">Option1</button>
+                <button  class="option-btn" id="option2" onclick="optionsBtnPressed(1)">Option2</button>
+                <button  class="option-btn" id="option3" onclick="optionsBtnPressed(2)">Option3</button>
+                <button  class="option-btn" id="option4" onclick="optionsBtnPressed(3)">Option4</button>
             </div>
         </div>
         <div id="scorepage" class="hide">
@@ -37,13 +38,13 @@
                 <input type="submit" id="submitNameBtn">
             </form>
         </div>
-        <div id=highscorepage class="hide">
+        <div id="highscorepage" class="hide">
             <h1>Highscores</h1>
             <ol id="highscore-list">
 
             </ol>
             <button id = "playAgainButton" class="btn"> Play Again! </button>
-            <button class="btn">Clear Highscores</button>
+            <button class="btn" id="clearHighScoresBtn">Clear Highscores</button>
         </div>
     </main>
     <script src="javascript.js"></script>

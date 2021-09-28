@@ -14,7 +14,7 @@ var optionButton1 = document.getElementById("option1");
 var optionButton2 = document.getElementById("option2");
 var optionButton3 = document.getElementById("option3");
 var optionButton4 = document.getElementById("option4");
-var timeLeft = 60;
+var timeLeft = 120;
 var playerScore = 0;
 var scorePage = document.getElementById("scorepage");
 var submitNamebtn = document.getElementById("submitNameBtn");
@@ -87,19 +87,55 @@ var questions = [{
 {
     pokemonImgSrc: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/069.png", 
     options: [
-        {content: "plantis", correct: true},
+        {content: "plantis", correct: false},
         {content: "plantra", correct: false},
-        {content: "bellsprout", correct: false},
+        {content: "bellsprout", correct: true},
         {content: "bellsnort", correct: false}
     ]
 },
 {
     pokemonImgSrc: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/145.png", 
     options: [
-        {content: "electro", correct: true},
+        {content: "electro", correct: false},
         {content: "thunderhawk", correct: false},
         {content: "zipdas", correct: false},
-        {content: "zapdos", correct: false}
+        {content: "zapdos", correct: true}
+    ]
+},
+{
+    pokemonImgSrc: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/075.png", 
+    options: [
+        {content: "graveler", correct: true},
+        {content: "geodude", correct: false},
+        {content: "onix", correct: false},
+        {content: "golem", correct: false}
+    ]
+},
+{
+    pokemonImgSrc: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/037.png", 
+    options: [
+        {content: "eevee", correct: true},
+        {content: "sixtails", correct: false},
+        {content: "sumosmash", correct: false},
+        {content: "sleepoi", correct: false}
+    ]
+},
+{
+    pokemonImgSrc: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/084.png", 
+    options: [
+        {content: "snorlax", correct: true},
+        {content: "suresnacks", correct: false},
+        {content: "sumosmash", correct: false},
+        {content: "sleepoi", correct: false}
+    ]
+},
+{
+    pokemonImgSrc: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/054.png", 
+    options: [
+        {content: "snorlax", correct: true},
+        {content: "suresnacks", correct: false},
+        {content: "sumosmash", correct: false},
+        {content: "sleepoi", correct: false}
     ]
 }
 ]
@@ -119,11 +155,11 @@ function setupGameRound() {
 function updateTimer() {
     if(timeLeft <= 0){
         endGame(); 
-    }else{
-    document.getElementById("progressBar").value = 60 - timeLeft;
+    }
+    document.getElementById("progressBar").value = 120 - timeLeft;
     timeLeft--;
     clearInterval(timeLeft);
-    }
+    
 }
 
 
@@ -137,24 +173,34 @@ startButton.addEventListener("click",function(){
     
       
 })
- function addNewHighscore(){
-    var ol = document.getElementById("highscore-list");
-    var li = document.createElement("li");
-    li.appendChild(document.createTextNode(playerName.value + " - " + playerScore));
-    ol.appendChild(li);
- }
 
 submitNamebtn.addEventListener("click",function(event) {
     event.preventDefault();
+    checkForStoredData();
     addNewHighscore();
     highScorePage.classList.remove("hide");
     scorePage.classList.add("hide");
+    saveData();
 })
 
 playAgainBtn.addEventListener("click", function(){
     location.reload();
     return false;
 })
+// need to store scores in local storage somehow
+function saveData(){
+    
+    
+}
+function checkForStoredData(){
+}
+
+function addNewHighscore(){
+   var ol = document.getElementById("highscore-list");
+   var li = document.createElement("li");
+   li.appendChild(document.createTextNode(playerName.value + " - " + playerScore));
+   ol.appendChild(li);
+}
 
 // start button must also replace start button with a list of buttons that are the options
 // buttons must have a class of wrong or right 
