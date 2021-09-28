@@ -8,7 +8,7 @@ var pokemonImg = document.getElementById("pokemon-image");
 var questionContainer = document.getElementById("question-container");
 var homePage = document.getElementById("homepage");
 var questionIndex = 0;
-var optionsIndex = -1;
+var optionsIndex = 0;
 var questionButtons = document.getElementsByClassName(".option-btn");
 var optionButton1 = document.getElementById("option1");
 var optionButton2 = document.getElementById("option2");
@@ -96,46 +96,46 @@ var questions = [{
 {
     pokemonImgSrc: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/145.png", 
     options: [
-        {content: "electro", correct: false},
-        {content: "thunderhawk", correct: false},
-        {content: "zipdas", correct: false},
-        {content: "zapdos", correct: true}
+        {content: "Electro", correct: false},
+        {content: "Thunderhawk", correct: false},
+        {content: "Zipdas", correct: false},
+        {content: "Zapdos", correct: true}
     ]
 },
 {
     pokemonImgSrc: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/075.png", 
     options: [
-        {content: "graveler", correct: true},
-        {content: "geodude", correct: false},
-        {content: "onix", correct: false},
-        {content: "golem", correct: false}
+        {content: "Graveler", correct: true},
+        {content: "Geodude", correct: false},
+        {content: "Onix", correct: false},
+        {content: "Golem", correct: false}
     ]
 },
 {
     pokemonImgSrc: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/037.png", 
     options: [
-        {content: "eevee", correct: true},
-        {content: "sixtails", correct: false},
-        {content: "sumosmash", correct: false},
-        {content: "sleepoi", correct: false}
+        {content: "Eevee", correct: false},
+        {content: "Vulpix", correct: true},
+        {content: "Dedenne", correct: false},
+        {content: "Foxer", correct: false}
     ]
 },
 {
     pokemonImgSrc: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/084.png", 
     options: [
-        {content: "snorlax", correct: true},
-        {content: "suresnacks", correct: false},
-        {content: "sumosmash", correct: false},
-        {content: "sleepoi", correct: false}
+        {content: "Ostratch", correct: false},
+        {content: "Duodra", correct: false},
+        {content: "Sumosmash", correct: false},
+        {content: "Doduo", correct: true}
     ]
 },
 {
     pokemonImgSrc: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/054.png", 
     options: [
-        {content: "snorlax", correct: true},
-        {content: "suresnacks", correct: false},
-        {content: "sumosmash", correct: false},
-        {content: "sleepoi", correct: false}
+        {content: "Confusduck", correct: false},
+        {content: "Psychquack", correct: false},
+        {content: "Psyduck", correct: false},
+        {content: "Telekinequack", correct: true}
     ]
 }
 ]

@@ -2,6 +2,7 @@
     background-color: #ffd740;
     color: black;
     font-size: 16px;
+    font-family: 'Cantora One',sans-serif;
 }
 h1{
     font-size: 300%;
@@ -52,7 +53,14 @@ p{
 }
 li {
  font-size: 50px;
- margin-left: 100px;
+    margin-left: 100px;
+    background: linear-gradient(to top,
+    white 45%, black 45% 55%, red 55% );
+    padding: 10px;
+    border-style: solid;
+    border-color: #50514f;
+    border-width: 5px;
+    border-radius: 5px;
 }
 #playerscore{
     font-size: 50px;
@@ -99,7 +107,9 @@ li {
     font-size: 25px;
     
 }
-
+#submitLabel {
+    font-size: 30px;
+}
    
 /* add pokemon colors */
 /* add styling to the question page  */
