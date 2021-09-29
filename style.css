@@ -4,53 +4,63 @@
     font-size: 16px;
     font-family: 'Cantora One',sans-serif;
 }
+
 h1{
     font-size: 300%;
 }
+
 p{
     font-size: x-large;
 }
+
 .hide{
     display: none;
 }
+
 #homepage{
     text-align: center;
+    margin-top: 100px;
+    text-shadow: 1px 1px 1px white, 0 0 0.1em black;
+}
+
+#homepagecontainer{
     border-style: solid;
     border-color: black;
-    margin-left: 500px;
-    margin-right: 500px;
-    margin-top: 100px;
     border-width: 10px;
-    text-shadow: 1px 1px 1px white, 0 0 0.1em black;
     border-radius: 10px;
-
+    margin-left: 30%;
+    margin-right: 30%;
 }
+  
 #scorepage{
     text-align: center;
     border-style: solid;
     border-color: black;
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-left: 30%;
+    margin-right: 30%;
     margin-top: 100px;
     border-width: 10px;
     text-shadow: 1px 1px 1px white, 0 0 0.1em black;
     border-radius: 10px;
 }
+
 #highscorepage{
     text-align: center;
     border-style: solid;
     border-color: black;
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-left: 30%;
+    margin-right: 30%;
     margin-top: 100px;
     border-width: 10px;
     text-shadow: 1px 1px 1px white, 0 0 0.1em black;
     border-radius: 10px;
 }
+
 #highscore-list{
     text-align: left;
     font-size: 50px;
 }
+
 li {
  font-size: 50px;
     margin-left: 100px;
@@ -62,17 +72,20 @@ li {
     border-width: 5px;
     border-radius: 5px;
 }
+
 #playerscore{
     font-size: 50px;
 }
+
 #question-container{
     text-align: center;
 }
+
 #options-container{
     display: flex;
     justify-content: center;
-    
     align-items: center;
+    flex-wrap: wrap;
 }
 .option-btn, #start-button, #playAgainButton, #clearHighScoresBtn,#submitHighscoreBtn{
     margin: 15px;
