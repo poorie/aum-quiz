@@ -74,7 +74,7 @@ li {
     
     align-items: center;
 }
-.option-btn, #start-button, #playAgainButton, #clearHighScoresBtn,#submitNameBtn{
+.option-btn, #start-button, #playAgainButton, #clearHighScoresBtn,#submitHighscoreBtn{
     margin: 15px;
     background: linear-gradient(to top,
     white 45%, black 45% 55%, red 55% );
@@ -92,7 +92,7 @@ li {
       
 }
 
-.option-btn:hover, #start-button:hover,#playAgainButton:hover, #clearHighScoresBtn:hover,#submitNameBtn:hover{
+.option-btn:hover, #start-button:hover,#playAgainButton:hover, #clearHighScoresBtn:hover,#submitHighscoreBtn:hover{
     color: rgba(255, 255, 255, 1);
     box-shadow: 0 5px 15px rgba(8, 8, 8, 0.4);
     
@@ -103,7 +103,7 @@ li {
 }
 
 #timer-container{
-    margin-left: 600px;
+    margin-left: 675px;
     font-size: 25px;
     
 }

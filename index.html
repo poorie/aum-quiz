@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon Quiz</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://i.pinimg.com/474x/b9/bc/18/b9bc181a061b41d58381eb193b6b6953.jpg">
 </head>
 
 <body>
     <header><div>
-        <span id="highscore-link">View Highscores</span>
-        <span id="timer-container">Time:<progress value="0" max="60" id="progressBar"></progress></span>
+        <span id="highscore-link"><a href="#scorepage">View Highscores</a></span>
+        <span id="timer-container">Time:<progress value="0" max="120" id="progressBar"></progress></span>
             </div>
     </header>
     <main>
@@ -30,12 +31,13 @@
                 <button  class="option-btn" id="option4" onclick="optionsBtnPressed(3)">Option4</button>
             </div>
         </div>
+    
         <div id="scorepage" class="hide">
             <h1>Congrats! Your Score is: <span id = "playerscore" ></span></h1>
-            <form id="playerNameForm">
-                <label id = "submitLabel" for="playerName">Enter Initials:</label>
-                <input type="text" id="playerName" name="playerName">
-                <input type="submit" id="submitNameBtn">
+            <form id="highscores-form">
+                <label for="highscoresText" id="submitLabel">Enter Initials:</label>
+                <input type="text" id="highscores-text" name="highscores">
+                <input type="submit" id="submitHighscoreBtn">
             </form>
         </div>
         <div id="highscorepage" class="hide">
