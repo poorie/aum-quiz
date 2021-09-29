@@ -18,9 +18,7 @@ var timeLeft = 120;
 var playerScore = 0;
 var scorePage = document.getElementById("scorepage");
 var playAgainBtn = document.getElementById("playAgainButton");
-
 var clearHighScoresBtn = document.getElementById("clearHighScoresBtn")
-
 var hiscoreLink = document.getElementById("highscore-link");
 var highscores = [];
 var highScorePage = document.getElementById("highscorepage");
@@ -196,7 +194,7 @@ function updateTimer() {
         document.getElementById("progressBar").value = 120 - timeLeft;
         timeLeft--;
     }
-
+    
 }
 
 
@@ -218,7 +216,7 @@ playAgainBtn.addEventListener("click", function () {
 // need to store scores in local storage somehow
 
 
-// The following function renders items in a highscores list as <li> elements
+// renders items in a highscores list 
 function renderHighscores() {
     // Clear highscoresList element and update highscoresCountSpan
     highScoreList.innerHTML = "";
@@ -243,10 +241,9 @@ function init() {
         highscores = storedHighscores;
     }
 
-    // This is a helper function that will render highscoress to the DOM
     renderHighscores();
 }
-//   store highscores in local storage
+// store highscores in local storage
 function storeHighscores() {
     // Stringify and set key in localStorage to todos array
     localStorage.setItem("highscores", JSON.stringify(highscores));
@@ -261,7 +258,7 @@ submitHighscoreBtn.addEventListener("click", function (event) {
         return;
     }
 
-    // Add new highscoreText to highscores array, clear the input
+    // Add new highscoresText to highscores array, clear the input
     highscores.push(highscoresText);
     highscoresInput.value = "";
 
@@ -282,4 +279,4 @@ clearHighScoresBtn.addEventListener("click", function () {
 })
 init()
 
-// back button that returns to home page 
+ 
