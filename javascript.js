@@ -82,95 +82,94 @@ function checkRightOrWrong() {
 }
 
 var questions = [{
-    pokemonImgSrc: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/143.png",
+    pokemonImgSrc: "https://img.favpng.com/20/10/16/thirumandhamkunnu-temple-kadampuzha-devi-temple-kozhikode-madayi-kavu-kodungallur-bhagavathy-temple-png-favpng-ZRF8CTv8js1EjgmgCbCYLWAZT.jpg",
     options: [
-        { content: "snorlax", correct: true },
-        { content: "suresnacks", correct: false },
-        { content: "sumosmash", correct: false },
-        { content: "sleepoi", correct: false }
+        { content: "Lakshmi", correct: false },
+        { content: "Parvati", correct: false },
+        { content: "Chamundi", correct: true },
+        { content: "Saraswati", correct: false },    ]
+},
+{    
+    pokemonImgSrc: "https://freepngimg.com/thumb/temple/88632-sita-temple-navami-rama-religion-free-transparent-image-hq.png",
+    options: [
+        { content: "Rama", correct: true },
+        { content: "Krishna", correct: false },
+        { content: "Shiva", correct: false },
+        { content: "Indra", correct: false }
+    ]
+},   
+{    
+    pokemonImgSrc: "https://freepngimg.com/thumb/vasant_panchami/96340-vasant-panchami-veena-string-instrument-indian-musical-instruments-for-happy-ecards.png",
+    options: [
+        { content: "Lakshmi", correct: false },
+        { content: "Durga", correct: false },
+        { content: "Chamundi", correct: false },
+        { content: "Saraswati", correct: true },
     ]
 },
 {
-    pokemonImgSrc: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/069.png",
+    pokemonImgSrc: "https://www.pngkey.com/png/detail/853-8531817_lord-kartikeya-god-murugan.png",
     options: [
-        { content: "plantis", correct: false },
-        { content: "plantra", correct: false },
-        { content: "bellsprout", correct: true },
-        { content: "bellsnort", correct: false }
+        { content: "Krishna", correct: false },
+        { content: "Ram", correct: false },
+        { content: "Karthikeya", correct: true },
+        { content: "Balram", correct: false }
+    ]
+},
+{    
+    pokemonImgSrc: "https://www.freeiconspng.com/uploads/high-resolution-durga-png-clipart-5.png",
+    options: [
+        { content: "Lakshmi", correct: false },
+        { content: "Durga", correct: true },
+        { content: "Sita", correct: false },
+        { content: "Saraswati", correct: false },
     ]
 },
 {
-    pokemonImgSrc: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/145.png",
+    pokemonImgSrc: "https://freepngimg.com/thumb/lord_krishna/8-2-lord-krishna-png-picture.png",
     options: [
-        { content: "Electro", correct: false },
-        { content: "Thunderhawk", correct: false },
-        { content: "Zipdas", correct: false },
-        { content: "Zapdos", correct: true }
+        { content: "Indra", correct: false },
+        { content: "Krishna", correct: true },
+        { content: "Karthikeya", correct: false },
+        { content: "Hanuman", correct: false }
+    ]
+},
+{    
+    pokemonImgSrc: "https://gallerypngs.com/wp-content/uploads/2024/04/god-lakshmi-ji-png-image-download-545.png",
+    options: [
+        { content: "Lakshmi", correct: true },
+        { content: "Durga", correct: false },
+        { content: "Chamundi", correct: false },
+        { content: "Saraswati", correct: false },
     ]
 },
 {
-    pokemonImgSrc: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/075.png",
+    pokemonImgSrc: "https://freepngimg.com/thumb/hanuman/10-2-hanuman-png.png",
     options: [
-        { content: "Graveler", correct: true },
-        { content: "Geodude", correct: false },
-        { content: "Onix", correct: false },
-        { content: "Golem", correct: false }
+        { content: "Indra", correct: false },
+        { content: "Ganesha", correct: false },
+        { content: "Karthikeya", correct: false },
+        { content: "Hanuman", correct: true }
     ]
 },
 {
-    pokemonImgSrc: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/037.png",
+    pokemonImgSrc: "https://pngsource.in/assets/thumbnails/Sita%2520maa%2520transparent%2520image%2520png_j38-u-AUE-U2-.png",
     options: [
-        { content: "Eevee", correct: false },
-        { content: "Vulpix", correct: true },
-        { content: "Dedenne", correct: false },
-        { content: "Foxer", correct: false }
+        { content: "Lakshmi", correct: false },
+        { content: "Durga", correct: false },
+        { content: "Sita", correct: true },
+        { content: "Saraswati", correct: false },
     ]
 },
 {
-    pokemonImgSrc: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/084.png",
+    pokemonImgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjLQqY9P45-vsa2FAG7XAgnalvc4Kvi8q_hA&s",
     options: [
-        { content: "Ostratch", correct: false },
-        { content: "Duodra", correct: false },
-        { content: "Sumosmash", correct: false },
-        { content: "Doduo", correct: true }
+        { content: "Indra", correct: true },
+        { content: "Ganesha", correct: false },
+        { content: "Karthikeya", correct: false },
+        { content: "Hanuman", correct: false }
     ]
 },
-{
-    pokemonImgSrc: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/054.png",
-    options: [
-        { content: "Confusduck", correct: false },
-        { content: "Psychquack", correct: false },
-        { content: "Psyduck", correct: true },
-        { content: "Telekinequack", correct: false }
-    ]
-},
-{
-    pokemonImgSrc: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/031.png",
-    options: [
-        { content: "Ryhorn", correct: false },
-        { content: "Nidoking", correct: false },
-        { content: "Nidoqueen", correct: true },
-        { content: "Ryperior", correct: false }
-    ]
-},
-{
-    pokemonImgSrc: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/014.png",
-    options: [
-        { content: "Kakuna", correct: true },
-        { content: "Metapod", correct: false },
-        { content: "Caterpie", correct: false },
-        { content: "Hakuna", correct: false }
-    ]
-},
-{
-    pokemonImgSrc: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/097.png",
-    options: [
-        { content: "Abra", correct: false },
-        { content: "Slowbro", correct: false },
-        { content: "Drowzee", correct: false },
-        { content: "Hypno", correct: true }
-    ]
-}
 ]
 // Purpose is to set the ui before each round
 function setupGameRound() {
