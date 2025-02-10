@@ -89,7 +89,7 @@ var questions = [{
         { content: "Chamundi", correct: true },
         { content: "Saraswati", correct: false },    ]
 },
-{    
+{
     pokemonImgSrc: "https://freepngimg.com/thumb/temple/88632-sita-temple-navami-rama-religion-free-transparent-image-hq.png",
     options: [
         { content: "Rama", correct: true },
@@ -97,8 +97,8 @@ var questions = [{
         { content: "Shiva", correct: false },
         { content: "Indra", correct: false }
     ]
-},   
-{    
+},
+{
     pokemonImgSrc: "https://freepngimg.com/thumb/vasant_panchami/96340-vasant-panchami-veena-string-instrument-indian-musical-instruments-for-happy-ecards.png",
     options: [
         { content: "Lakshmi", correct: false },
@@ -116,7 +116,7 @@ var questions = [{
         { content: "Balram", correct: false }
     ]
 },
-{    
+{
     pokemonImgSrc: "https://www.freeiconspng.com/uploads/high-resolution-durga-png-clipart-5.png",
     options: [
         { content: "Lakshmi", correct: false },
@@ -134,7 +134,7 @@ var questions = [{
         { content: "Hanuman", correct: false }
     ]
 },
-{    
+{
     pokemonImgSrc: "https://gallerypngs.com/wp-content/uploads/2024/04/god-lakshmi-ji-png-image-download-545.png",
     options: [
         { content: "Lakshmi", correct: true },
