@@ -82,15 +82,16 @@ function checkRightOrWrong() {
 }
 
 var questions = [{
-    pokemonImgSrc: "https://img.favpng.com/20/10/16/thirumandhamkunnu-temple-kadampuzha-devi-temple-kozhikode-madayi-kavu-kodungallur-bhagavathy-temple-png-favpng-ZRF8CTv8js1EjgmgCbCYLWAZT.jpg",
+    hinduImgSrc: "https://www.freeiconspng.com/uploads/high-quality-goddess-maheshwar-durga-cliparts-for-free--16.png",
     options: [
         { content: "Lakshmi", correct: false },
         { content: "Parvati", correct: false },
         { content: "Chamundi", correct: true },
-        { content: "Saraswati", correct: false },    ]
+        { content: "Saraswati", correct: false },
+    ]
 },
 {
-    pokemonImgSrc: "https://freepngimg.com/thumb/temple/88632-sita-temple-navami-rama-religion-free-transparent-image-hq.png",
+    hinduImgSrc: "https://freepngimg.com/thumb/temple/88632-sita-temple-navami-rama-religion-free-transparent-image-hq.png",
     options: [
         { content: "Rama", correct: true },
         { content: "Krishna", correct: false },
@@ -99,7 +100,7 @@ var questions = [{
     ]
 },
 {
-    pokemonImgSrc: "https://freepngimg.com/thumb/vasant_panchami/96340-vasant-panchami-veena-string-instrument-indian-musical-instruments-for-happy-ecards.png",
+    hinduImgSrc: "https://i.pinimg.com/474x/54/06/50/5406500b5f81f7e820174c0350a3c151.jpg",
     options: [
         { content: "Lakshmi", correct: false },
         { content: "Durga", correct: false },
@@ -108,7 +109,8 @@ var questions = [{
     ]
 },
 {
-    pokemonImgSrc: "https://www.pngkey.com/png/detail/853-8531817_lord-kartikeya-god-murugan.png",
+    //hinduImgSrc: "https://www.pngkey.com/png/detail/853-8531817_lord-kartikeya-god-murugan.png",
+    hinduImgSrc: "https://www.trita.in/wp-content/uploads/2022/01/07-kartikeya.png",
     options: [
         { content: "Krishna", correct: false },
         { content: "Ram", correct: false },
@@ -117,7 +119,7 @@ var questions = [{
     ]
 },
 {
-    pokemonImgSrc: "https://www.freeiconspng.com/uploads/high-resolution-durga-png-clipart-5.png",
+    hinduImgSrc: "https://www.freeiconspng.com/uploads/high-resolution-durga-png-clipart-5.png",
     options: [
         { content: "Lakshmi", correct: false },
         { content: "Durga", correct: true },
@@ -126,7 +128,7 @@ var questions = [{
     ]
 },
 {
-    pokemonImgSrc: "https://freepngimg.com/thumb/lord_krishna/8-2-lord-krishna-png-picture.png",
+    hinduImgSrc: "https://freepngimg.com/thumb/lord_krishna/8-2-lord-krishna-png-picture.png",
     options: [
         { content: "Indra", correct: false },
         { content: "Krishna", correct: true },
@@ -135,7 +137,7 @@ var questions = [{
     ]
 },
 {
-    pokemonImgSrc: "https://gallerypngs.com/wp-content/uploads/2024/04/god-lakshmi-ji-png-image-download-545.png",
+    hinduImgSrc: "https://pngfre.com/wp-content/uploads/lakshmi-30-231x300.png",
     options: [
         { content: "Lakshmi", correct: true },
         { content: "Durga", correct: false },
@@ -144,7 +146,7 @@ var questions = [{
     ]
 },
 {
-    pokemonImgSrc: "https://freepngimg.com/thumb/hanuman/10-2-hanuman-png.png",
+    hinduImgSrc: "https://e7.pngegg.com/pngimages/661/1003/png-clipart-lord-hanuman-illustration-hanuman-ganesha-shiva-rama-parvati-hanuman-ram-religion-thumbnail.png",
     options: [
         { content: "Indra", correct: false },
         { content: "Ganesha", correct: false },
@@ -153,7 +155,7 @@ var questions = [{
     ]
 },
 {
-    pokemonImgSrc: "https://pngsource.in/assets/thumbnails/Sita%2520maa%2520transparent%2520image%2520png_j38-u-AUE-U2-.png",
+    hinduImgSrc: "https://pngsource.in/assets/thumbnails/Sita%2520maa%2520transparent%2520image%2520png_j38-u-AUE-U2-.png",
     options: [
         { content: "Lakshmi", correct: false },
         { content: "Durga", correct: false },
@@ -162,7 +164,7 @@ var questions = [{
     ]
 },
 {
-    pokemonImgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjLQqY9P45-vsa2FAG7XAgnalvc4Kvi8q_hA&s",
+    hinduImgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjLQqY9P45-vsa2FAG7XAgnalvc4Kvi8q_hA&s",
     options: [
         { content: "Indra", correct: true },
         { content: "Ganesha", correct: false },
@@ -177,7 +179,7 @@ function setupGameRound() {
     optionButton2.innerText = questions[questionIndex].options[1].content;
     optionButton3.innerText = questions[questionIndex].options[2].content;
     optionButton4.innerText = questions[questionIndex].options[3].content;
-    pokemonImg.src = questions[questionIndex].pokemonImgSrc;
+    pokemonImg.src = questions[questionIndex].hinduImgSrc;
 
 
 }
