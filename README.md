@@ -1,4 +1,4 @@
-# fun-quiz-game
+# aum-quiz
 Hindu Gods and Godessess themed quiz game in browser!
 
 I created this for my young kids, nieces and nephews, and friends kids.
